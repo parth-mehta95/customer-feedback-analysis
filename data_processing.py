@@ -1,4 +1,6 @@
 def calculate_average(numbers):
+  if not numbers:
+    return 0
   return sum(numbers) / len(numbers)
 
 def calculate_median(numbers):
@@ -16,5 +18,7 @@ def calculate_median(numbers):
 
 # Example usage
 data = [1, 2, 3, 4, 5]
+average = calculate_average(data)
 median = calculate_median(data)
+print(f"The average is: {average}")
 print(f"The median is: {median}")
